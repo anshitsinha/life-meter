@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Character set and compatibility -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <!-- Page Title, Favicon and Metadata -->
+    <title>Life Meter</title>
+    <meta name="title" content="Life Meter">
+    <meta name="description" content="This is an age countdown website to show the importance of time.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width">
+    
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="app.js"></script>  
+    
+    <!-- Styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Form for choosing date of birth -->
+<form id="choose" style="display: none;">
+    <h1 id="dob" class="age-label-query">When were you born?</h1>
+    <footer>
+        <input type="date" name="dob" id="dob-input">
+        <button type="submit" id="submit">Enter</button>
+    </footer>
+</form>
+
+<!-- Countdown Timer Section -->
+<div id="timer" style="display: none;">
+    <h1 class="age-label">AGE</h1>
+    <h2 class="count" id="age"></h2>
+</div>
+
+</body>
+</html>
